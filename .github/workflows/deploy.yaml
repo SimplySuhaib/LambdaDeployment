@@ -20,10 +20,10 @@ jobs:
       - name: Set up Node.js environment
         uses: actions/setup-node@v3  # Set up the Node.js environment
         with:
-          node-version: '16'  # Specify Node.js version
+          node-version: '20'  # Specify Node.js version
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2  # Set up AWS credentials
+        uses: aws-actions/configure-aws-credentials@v3  # Set up AWS credentials
         with:
           aws-access-key-id: ${{ secrets.AKIAQ4J5X2RZLEUBV54P }}  # Use GitHub secrets for AWS credentials
           aws-secret-access-key: ${{ secrets.aWn6aHhqE7CkjkCg2rXCA5pFuxc7UVZjifW9v71U }}
